@@ -3,7 +3,8 @@
  */
 import java.util.ArrayList;
 import java.util.List;
-import java.lang.annotation.*;
+
+@SuppressWarnings("unchecked")
 
 public class Author extends Person {
     private List books;
@@ -12,6 +13,7 @@ public class Author extends Person {
         super(firstName, lastName);
         books = new ArrayList();
     }
+
 
     /**
      * @deprecated Use publishedBooks instead
